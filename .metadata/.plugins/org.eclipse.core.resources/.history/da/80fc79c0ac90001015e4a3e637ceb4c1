@@ -1,0 +1,14 @@
+package collection;
+
+import java.util.ArrayList;
+
+public class ArrayListExUnique {
+	
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Integer> list=new ArrayList<integer>();
+		
+	}
+
+}

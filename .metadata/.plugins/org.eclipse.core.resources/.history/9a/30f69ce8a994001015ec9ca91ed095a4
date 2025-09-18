@@ -1,0 +1,24 @@
+package com.selenium.basics.selenium_maven_project;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class BasicsAutomation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//creating driver object to open chrome browser
+		WebDriver driver_chrome=new ChromeDriver(); //default constructor
+		
+		//will take you to requested webpage
+		driver_chrome.get("https://www.flipkart.com/");
+		
+		
+		/*
+		WebDriver driver_mozilla=new FirefoxDriver(); //default constructor
+		*/
+	}
+
+}

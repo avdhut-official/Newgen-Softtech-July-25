@@ -1,0 +1,13 @@
+package collection;
+
+import java.util.HashMap;
+
+public class HashMapEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashMap<K, V> map=new HashMap<K, V>();
+	}
+
+}

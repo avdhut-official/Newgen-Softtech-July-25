@@ -1,0 +1,27 @@
+package collection;
+
+import java.util.HashMap;
+
+public class HashMapEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashMap<Integer, String> map=new HashMap();
+		map.put(1001,"Avdhut");
+		map.put(1002,"Ajay");
+		map.put(1005,null);
+		System.out.println(map);
+		
+		map.put(1003,"Devansh");
+		map.put(1002,"Abhishek");
+		
+		System.out.println(map);
+		
+		
+	}
+
+}
+
+
+

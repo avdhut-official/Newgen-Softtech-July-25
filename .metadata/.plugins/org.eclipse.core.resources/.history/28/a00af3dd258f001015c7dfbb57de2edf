@@ -1,0 +1,58 @@
+package collection;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class HashSetEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//List l=new ArrayList<Integer>();
+		//Set s=new HashSet<Integer>();
+		
+		HashSet hash=new HashSet();
+		hash.add(200);
+		hash.add("Avdhut");
+		hash.add(36.78);
+		hash.add('a');
+		hash.add('a');
+		hash.add(null);
+		hash.add(null);
+		
+		//printing hash set
+		System.out.println("My Set - "+hash);
+		
+		hash.remove(200);
+		System.out.println("After Remove -"+hash);
+		
+		hash.remove('b');
+		System.out.println("After Remove -"+hash);
+		
+		//inserting not allowed
+		//accessing particular element not allowed
+		
+		ArrayList<Integer> list=new ArrayList<Integer>(hash);
+		System.out.println(list);
+		
+		System.out.println(list.get(0));
+		for(Object z:list)
+		{
+			System.out.println(z);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
