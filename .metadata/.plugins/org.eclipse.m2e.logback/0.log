@@ -769,3 +769,11 @@
 2025-09-18 22:08:56,707 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ip-slim-3\eclipse-workspacenew-July25\selenium-maven-project\src\main\resources
 2025-09-18 22:08:56,709 [Worker-43: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2025-09-18 22:08:56,710 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ip-slim-3\eclipse-workspacenew-July25\selenium-maven-project\src\test\resources
+2025-09-18 22:09:23,762 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-09-18 22:09:23,763 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ip-slim-3\eclipse-workspacenew-July25\selenium-maven-project\src\main\resources
+2025-09-18 22:09:23,764 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-09-18 22:09:23,765 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ip-slim-3\eclipse-workspacenew-July25\selenium-maven-project\src\test\resources
+2025-09-18 22:09:30,393 [Worker-42: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-09-18 22:09:30,394 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ip-slim-3\eclipse-workspacenew-July25\selenium-maven-project\src\main\resources
+2025-09-18 22:09:30,395 [Worker-42: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-09-18 22:09:30,397 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ip-slim-3\eclipse-workspacenew-July25\selenium-maven-project\src\test\resources
