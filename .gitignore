@@ -1,0 +1,12 @@
+# Eclipse specific files
+.classpath
+.project
+.settings/
+.metadata/
+
+# Build output
+bin/
+
+# OS specific files
+.DS_Store
+Thumbs.db
