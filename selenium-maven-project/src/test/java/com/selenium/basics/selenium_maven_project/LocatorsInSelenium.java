@@ -13,6 +13,7 @@ public class LocatorsInSelenium {
 		chrome_driver.manage().window().maximize();
 		chrome_driver.get("https://facebook.com/");
 		
+		/*
 		//located web element using id for textfield email
 		WebElement user_email = chrome_driver.findElement(By.id("email"));
 		user_email.sendKeys("avdhut.bhiseofficial@test.com");
@@ -24,6 +25,20 @@ public class LocatorsInSelenium {
 		//located web element using name for button login
 		WebElement btn_login= chrome_driver.findElement(By.name("login"));
 		btn_login.click();
+		*/
+		
+		/*
+		//locate a link -- linkText, partialLinkText
+		WebElement link_forgot= chrome_driver.findElement(By.linkText("Forgotten password?"));
+		link_forgot.click();
+		*/
+		
+		WebElement partial_link_forgot=chrome_driver.findElement(By.partialLinkText("Forgotten"));
+		System.out.println(partial_link_forgot.getAttribute("href"));
+		partial_link_forgot.click();
+		
+		
+		
 	}
 }
 
