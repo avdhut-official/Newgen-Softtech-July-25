@@ -2,6 +2,7 @@ package com.selenium.basics.selenium_maven_project;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class XPathDemo {
@@ -28,7 +29,10 @@ public class XPathDemo {
 		
 		//relative xpath
 		chrome_driver.findElement(By.xpath("//input[@id=\"small-searchterms\"]")).sendKeys("Fahrenheit 451 by Ray Bradbury");
-		chrome_driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
+		WebElement btn_search= chrome_driver.findElement(By.xpath("//button[@type=\"submit\"]"));
+		System.out.println(btn_search.getText());
+		btn_search.click();
+		
 		
 		
 	}
