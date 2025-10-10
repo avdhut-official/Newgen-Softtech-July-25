@@ -27,13 +27,21 @@ public class XPathDemo {
 		chrome_driver.findElement(By.xpath("/html/body/div[6]/div[1]/div[2]/div[2]/form/button")).click();
 		*/
 		
+		
+		chrome_driver.findElement(By.xpath("//span[ends-with(@class,'label')]/parent::a"));
+		
+	
+		/*
 		//relative xpath
 		chrome_driver.findElement(By.xpath("//input[@id=\"small-searchterms\"]")).sendKeys("Fahrenheit 451 by Ray Bradbury");
+		
+		
+		
 		WebElement btn_search= chrome_driver.findElement(By.xpath("//button[@type=\"submit\"]"));
 		System.out.println(btn_search.getText());
 		btn_search.click();
 		
-		
+		*/
 		
 	}
 
