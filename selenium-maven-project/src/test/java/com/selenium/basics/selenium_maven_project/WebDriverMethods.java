@@ -27,8 +27,6 @@ public class WebDriverMethods {
 		current_url=chrome_driver.getCurrentUrl();
 		System.out.println(current_url);*/
 		
-		System.out.println(chrome_driver.getPageSource());
-		
 		WebElement register_link=chrome_driver.findElement(By.linkText("Register"));
 		WebElement login_link=chrome_driver.findElement(By.linkText("Log in"));
 		
@@ -38,8 +36,12 @@ public class WebDriverMethods {
 		register_link.sendKeys(openInNewTab);
 		login_link.sendKeys(openInNewTab);
 		
+		
+		
 		Set<String> all_tabs=chrome_driver.getWindowHandles();
 		System.out.println(all_tabs);
+		
+		System.out.println(chrome_driver.getWindowHandle());
 		
 		/*
 		String window_handle=chrome_driver.getWindowHandle();
