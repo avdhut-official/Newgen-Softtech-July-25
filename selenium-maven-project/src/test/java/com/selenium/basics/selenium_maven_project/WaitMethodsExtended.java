@@ -22,5 +22,8 @@ public class WaitMethodsExtended {
 			
 		WebElement username=chrome_driver.findElement(By.name("username"));
 		username.sendKeys("Admin");
+		
+		WebElement password=chrome_driver.findElement(By.name("password"));
+		password.sendKeys("admin123");
 	}
 }
