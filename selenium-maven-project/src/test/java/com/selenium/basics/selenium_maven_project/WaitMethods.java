@@ -1,5 +1,7 @@
 package com.selenium.basics.selenium_maven_project;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +15,7 @@ public class WaitMethods {
 		WebDriver chrome_driver=new ChromeDriver();
 		chrome_driver.manage().window().maximize();
 		chrome_driver.get("https://demo.nopcommerce.com/");
+		chrome_driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		//no such web element - we have wrong locator
 		WebElement txt_search= chrome_driver.findElement(By.id("small-searchterms"));
