@@ -26,9 +26,16 @@ public class HandlingAutoSuggestion {
 		for(WebElement x:all_suggestion)
 		{
 			System.out.println(x.getText());
+			
+			/*String value=x.getText();
+			if(value.equals("automation"))
+			{
+				x.click();
+				break;
+			}*/
 		}
 		
-		Thread.sleep(5000);
+		Thread.sleep(15000);
 		
 		//Amazon Auto Suggestion
 		chrome_driver.get("https://www.amazon.in/");
