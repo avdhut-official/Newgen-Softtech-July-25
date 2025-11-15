@@ -1,10 +1,14 @@
 package com.selenium.basics.selenium_maven_project;
 
+import java.io.File;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
@@ -16,24 +20,23 @@ public static void main(String[] args) throws InterruptedException {
 		chrome_driver.manage().window().maximize();
 		chrome_driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		chrome_driver.get("https://text-compare.com/");
-		chrome_driver.findElement(By.xpath("//textarea[@id='inputText1']")).sendKeys("Avdhut");
+		chrome_driver.get("https://www.google.com");
 		
-		Actions action_key=new Actions(chrome_driver);
+		String property=System.getProperty("user.dir");
 		
-		action_key.keyDown(Keys.CONTROL).sendKeys("A").keyUp(Keys.CONTROL).perform();
+		//Taking Screenshot
 		
-		Thread.sleep(2000);
+		TakesScreenshot camera=(TakesScreenshot)chrome_driver;
+		File source=camera.getScreenshotAs(OutputType.FILE);
+		File dest=new File(property+"\\screenshot\\1.png");
 		
-		action_key.keyDown(Keys.CONTROL).sendKeys("C").keyUp(Keys.CONTROL).perform();
+		source.renameTo(dest);
 		
-		Thread.sleep(2000);
-		
-		action_key.keyDown(Keys.CONTROL).sendKeys("TAB").keyUp(Keys.TAB).perform();
-		
-		Thread.sleep(2000);
-		
-		action_key.keyDown(Keys.CONTROL).sendKeys("V").keyUp(Keys.CONTROL).perform();
+		WebElement search= chrome_driver.findElement(By.name("q"));
+		search.sendKeys("Automation");
+		File source_new=search.getScreenshotAs(OutputType.FILE);
+		File dest_new=new File(property+"\\screenshot\\2.png");
+		source_new.renameTo(dest_new);
 	}
 
 }
