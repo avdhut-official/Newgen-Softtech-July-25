@@ -54,6 +54,8 @@ public class FDCalculator {
 			chromeDriver.findElement(By.id("interest")).sendKeys(roi);
 			chromeDriver.findElement(By.id("tenure")).sendKeys(period_1);
 			
+			//WebElement sel_period=chrome_driver.findElement(By.id("tenurePeriod"));
+			
 			Select period=new Select(chromeDriver.findElement(By.id("tenurePeriod")));
 			period.selectByVisibleText(period_2);
 			
@@ -70,6 +72,8 @@ public class FDCalculator {
 			
 			//Validation
 			actual_mat_value=chromeDriver.findElement(By.xpath("//span[@id=\"resp_matval\"]//strong")).getText();
+			//its in String format for comparing this with actual we need to convert Double format
+			
 			System.out.println(actual_mat_value);
 			
 			if(Double.parseDouble(actual_mat_value)==Double.parseDouble(exp_mat_value))
@@ -103,7 +107,6 @@ public class FDCalculator {
 		FDCalculator fd=new FDCalculator();
 		fd.setup();
 		fd.getData();
-		fd.clearDetails();
 		fd.tearDown();
 	}
 }
